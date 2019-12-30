@@ -39,14 +39,6 @@ inputField.on("change", function () {
     if (country != "") { filterData = filterData.filter(p => p.country == input[3])};
     if (shape != "") { filterData = filterData.filter(p => p.shape == input[4])};
 
-    // var filterData = tableData;
-
-    // if (datetime != "") { filterData = filterData.filter(entry => { return entry.datetime == datetime }); };
-    // if (city != "") { filterData = filterData.filter(entry => { return entry.city == city }); };
-    // if (state != "") { filterData = filterData.filter(entry => { return entry.state == state }); };
-    // if (country != "") { filterData = filterData.filter(entry => { return entry.country == country }); };
-    // if (shape != "") { filterData = filterData.filter(entry => { return entry.shape == shape }); };
-
     filter.on("click", function () {
         tbody.html("");
         filterData.forEach((ufo) => {
